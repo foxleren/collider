@@ -12,9 +12,9 @@ function MainBody() {
             <Header/>
             <IntroPage/>
             <SliderPage/>
-            <DescriptionColumnPage/>
-            <SuggesterPage/>
-            <ContactsPage/>
+            {/*<DescriptionColumnPage/>*/}
+            {/*<SuggesterPage/>*/}
+            {/*<ContactsPage/>*/}
         </div>);
 }
 

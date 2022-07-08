@@ -1,9 +1,9 @@
 .intro-info-container {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 200px;
-    right: 80px;
+    position: relative;
+    bottom: 500px;
+    float: right;
 }
 
 .intro-info-container-item {

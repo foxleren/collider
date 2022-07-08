@@ -3,6 +3,11 @@ import './Header.css'
 import {Fade} from "react-awesome-reveal";
 
 function Header() {
+    function toggleBurger(e) {
+        e.target.classList.toggle('active')
+        document.getElementById('header-links').classList.toggle('open')
+    }
+
     return (
         <Fade>
             <header>
@@ -10,7 +15,12 @@ function Header() {
                     <div className="logo"/>
                 </Fade>
                 <Fade cascade={true} direction={"down"}>
-                    <ul>
+                    <div className="nav-toggle" onClick={(e) => toggleBurger(e)}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul id="header-links">
                         <li>
                             <a href={""}>О нас</a>
                         </li>
@@ -31,7 +41,7 @@ function Header() {
 
             </header>
         </Fade>
-        );
+    );
 }
 
 export default Header;
