@@ -1,0 +1,44 @@
+.IntroTitle-container {
+    position: relative;
+    max-width: 1365px;
+    margin: 0 auto;
+    bottom: 235px;
+}
+
+/*.IntroTitle-container div {*/
+/*    font-weight: 400;*/
+/*    font-size: 96px;*/
+/*    line-height: 127px;*/
+/*}*/
+
+.IntroTitle-text {
+    background-image: url(../images/intro_title.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1365px;
+    max-height: 570px;
+    width: 100%;
+    height: auto;
+    min-width: 300px;
+    min-height: 570px;
+    zoom: 0.95;
+    position: absolute;
+    top: 100px;
+    right: 125px;
+}
+
+.IntroTitle-ellipse {
+    background-image: url(../images/intro_ellipse.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 840px;
+    max-height: 255px;
+    width: 100%;
+    height: auto;
+    min-width: 300px;
+    min-height: 570px;
+    position: absolute;
+    right: 0px;
+    /*bottom: 80px;*/
+    zoom: 0.95;
+}

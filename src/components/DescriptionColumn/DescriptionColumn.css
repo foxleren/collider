@@ -1,0 +1,20 @@
+.DescriptionColumn-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.DescriptionColumn-text {
+    width: fit-content;
+    padding: 0px 10px;
+    font-weight: 400;
+    font-size: 135px;
+    line-height: 124px;
+    background-color: #000;
+    color: #FFF;
+    margin: 10px 0;
+}
+
+.DescriptionColumn-text.highlighted {
+    color: #FF0000;
+}

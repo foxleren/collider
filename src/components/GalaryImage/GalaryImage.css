@@ -1,0 +1,35 @@
+/*.image-container {*/
+/*    padding: 0px 40px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+
+.galary-image {
+    /*background-image: url(../images/intro.svg);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1365px;
+    max-height: 570px;
+    width: 100%;
+    height: auto;
+    min-width: 300px;
+    min-height: 570px;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.galary-image.fullscreen {
+    max-width: none;
+    max-height: none;
+}
+
+.galary-image.rectangle {
+    max-width: 375px;
+    max-height: 830px;
+}
+
+.galary-image.square {
+    max-width: 955px;
+    max-height: 830px;
+}
+

@@ -1,0 +1,9 @@
+.GalarySlider-container {
+    display: flex;
+    flex-wrap: nowrap;
+    /*height: 500px;*/
+    /*max-width: 1500px;*/
+    width: 100%;
+    overflow: hidden;
+    margin-top: 400px;
+}

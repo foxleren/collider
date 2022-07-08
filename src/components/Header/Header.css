@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 65px 40px 30px;
+}
+
+.logo {
+    min-width: 240px;
+    min-height: 40px;
+    background-image: url(../images/collider_logo_black_traced.svg);
+    background-repeat: no-repeat;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 850px;
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFF;
+}
