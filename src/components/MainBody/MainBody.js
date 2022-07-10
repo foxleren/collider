@@ -3,19 +3,16 @@ import './MainBody.css';
 import Header from '../Header/Header'
 import IntroPage from '../IntroPage/IntroPage'
 import SliderPage from "../SliderPage/SliderPage";
-import DescriptionColumnPage from "../DescriptionColumnPage/DescriptionColumnPage";
-import SuggesterPage from "../SuggesterPage/SuggesterPage";
-import ContactsPage from '../ContactsPage/ContactsPage'
+import {Fade} from "react-awesome-reveal";
 
 function MainBody() {
-    return (<div className="MainBody">
-            <Header/>
+    return (<div className="MainBody"><Fade cascade={true}><Header/>
             <IntroPage/>
             <SliderPage/>
             {/*<DescriptionColumnPage/>*/}
             {/*<SuggesterPage/>*/}
             {/*<ContactsPage/>*/}
-        </div>);
+        </Fade></div>);
 }
 
 export default MainBody;

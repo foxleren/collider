@@ -6,16 +6,14 @@
 }
 
 .image-slide {
-    /*border: 10px red solid;*/
-    /*background: aquamarine;*/
-
+    max-height: 95vh;
 }
 
 .slide-text-container {
     display: flex;
-    position: relative;
-    bottom: 290px;
-    left: 50px;
+    position: absolute;
+    bottom: -780px;
+    margin-left: 65px;
 }
 
 .slide-text {

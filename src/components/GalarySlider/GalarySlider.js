@@ -31,10 +31,13 @@ function GalarySlider(props) {
     }, [currentSlide])
     return (
         <div className="GalarySlider-container">
-            {images.map((img, index) => (
-                <ImageSlide key={index} link={img} margin={index === 0 ? -currentSlide * 100 + '%' : null}
-                            left={left[index]}
-                            right={right[index]} highlighted={highlighted[index]}/>))}
+            <div className="slider-container">
+                {images.map((img, index) => (
+                    <ImageSlide key={index} link={img} margin={index === 0 ? -currentSlide * 100 + '%' : null}
+                                left={left[index]}
+                                right={right[index]} highlighted={highlighted[index]}/>))}
+            </div>
+
             <SliderToggler currentSlide={currentSlide} slidesQuantity={images.length} changeSlide={changeSlide}/>
         </div>);
 }

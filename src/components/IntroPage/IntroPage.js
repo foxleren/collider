@@ -13,7 +13,6 @@ function IntroPage() {
                 <IntroTitle/>
             </Fade>
             <IntroInfo/>
-
         </div>
 
     );

@@ -1,7 +1,6 @@
 import './SliderToggler.css'
 
 function SliderToggler(props) {
-    console.log(props.slidesQuantity)
     return (<div className="sliders-switcher-container">
         {Array(props.slidesQuantity).fill(1).map((slide, index) => <div
             className={"slider-toggle" + (props.currentSlide === index ? " active" : "")}
