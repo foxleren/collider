@@ -1,21 +1,30 @@
 import './SuggesterPage.css'
 
 import GalaryImage from '../GalaryImage/GalaryImage'
+import {Bounce, Fade} from "react-awesome-reveal";
 
 function SuggesterPage() {
     return (<div className="SuggesterPage-container">
         <div className="SuggesterPage-top-container">
-            <div className="SuggesterPage-top-text">У НАС ЕСТЬ</div>
+            <Fade direction={"left"}>
+                <div className="SuggesterPage-top-text">У НАС ЕСТЬ</div>
+            </Fade>
             <div className="SuggesterPage-top-title-container">
-                <div className="SuggesterPage-top-title">МИНИ-ЗАЛЫ</div>
-                <div className="SuggesterPage-top-title">ПЕРЕГОВОРНЫЕ</div>
+                <Fade direction={"up"}>
+                    <div className="SuggesterPage-top-title">МИНИ-ЗАЛЫ</div>
+                    <div className="SuggesterPage-top-title">ПЕРЕГОВОРНЫЕ</div>
+                </Fade>
+
             </div>
         </div>
         <div className="SuggesterPage-bottom-container">
             <div className="SuggesterPage-left-container">
-                <div className="SuggesterPage-left-text">1500 В ЧАС 10/40 ЧЕЛОВЕК
-                    ОБОРУДОВАНИЕ ВКЛЮЧЕНО
-                </div>
+                <Fade direction={"left"}>
+                    <div className="SuggesterPage-left-text">1500 В ЧАС 10/40 ЧЕЛОВЕК
+                        ОБОРУДОВАНИЕ ВКЛЮЧЕНО
+                    </div>
+                </Fade>
+
                 <GalaryImage link={"/images/suggest_rectangle.svg"} extraClassName="rectangle"/>
             </div>
             <div className="SuggesterPage-right-container">

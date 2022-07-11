@@ -9,7 +9,7 @@ import {Fade} from "react-awesome-reveal";
 function IntroPage() {
     return (<div className="IntroPage-container">
             <Fade cascade={true} direction={"up"}>
-                <GalaryImage link={"/images/intro.svg"} extraClassName=""/>
+                <GalaryImage link={"/images/intro.svg"} extraClassName="intro"/>
                 <IntroTitle/>
             </Fade>
             <IntroInfo/>

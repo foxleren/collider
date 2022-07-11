@@ -6,8 +6,7 @@ function IntroTitle() {
             <div className="IntroTitle-text">ПРИВЕТ, МЫ - COLLIDER НА САВЕЛОВСКОЙ, И МЫ БОЛЬШЕ, ЧЕМ
                 <span>КОВОРКИНГ</span>
             </div>
-            {/*<div className="IntroTitle-text" alt={""}/>*/}
-            {/*<div className="IntroTitle-ellipse" alt={""}/>*/}
+            <div className="IntroTitle-ellipse" alt={""}/>
         </div>);
 }
 

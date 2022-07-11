@@ -29,17 +29,16 @@ function GalarySlider(props) {
 
         return () => clearTimeout(timer)
     }, [currentSlide])
-    return (
-        <div className="GalarySlider-container">
-            <div className="slider-container">
-                {images.map((img, index) => (
-                    <ImageSlide key={index} link={img} margin={index === 0 ? -currentSlide * 100 + '%' : null}
-                                left={left[index]}
-                                right={right[index]} highlighted={highlighted[index]}/>))}
-            </div>
+    return (<div className="GalarySlider-container">
 
-            <SliderToggler currentSlide={currentSlide} slidesQuantity={images.length} changeSlide={changeSlide}/>
-        </div>);
+        <div className="slider-container">
+            {images.map((img, index) => (
+                <ImageSlide key={index} link={img} margin={index === 0 ? -currentSlide * 100 + '%' : null}
+                            left={left[index]}
+                            right={right[index]} highlighted={highlighted[index]}/>))}
+        </div>
+        <SliderToggler currentSlide={currentSlide} slidesQuantity={images.length} changeSlide={changeSlide}/>
+    </div>);
 }
 
 export default GalarySlider;

@@ -25,3 +25,26 @@
     font-size: 48px;
     line-height: 63px;
 }
+
+
+@media (max-width: 1024px) {
+    .ContactsPage-title {
+        font-size: 86px;
+    }
+
+    .ContactsPage-text {
+        font-size: 44px;
+        line-height: 55px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .ContactsPage-title {
+        font-size: 68px;
+    }
+    .ContactsPage-text {
+        font-size: 34px;
+        line-height: 44px;
+    }
+}

@@ -6,16 +6,24 @@
 
 .galary-image {
     /*background-image: url(../images/intro.svg);*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*max-width: 1365px;*/
+    /*max-height: 570px;*/
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*min-width: 300px;*/
+    /*!*min-height: 570px;*!*/
+    /*background-size: cover;*/
+    /*object-fit: cover;*/
+
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 1365px;
-    max-height: 570px;
+    /*max-width: 1365px;*/
     width: 100%;
-    height: auto;
-    min-width: 300px;
-    min-height: 570px;
-    background-size: cover;
     object-fit: cover;
+    height: 99vh;
+    max-height: 1000px;
 }
 
 .galary-image.fullscreen {
@@ -31,5 +39,13 @@
 .galary-image.square {
     max-width: 955px;
     max-height: 830px;
+}
+
+.galary-image.half-height {
+    max-height: 49vh;
+}
+
+.galary-image.intro {
+    max-height: 75vh;
 }
 

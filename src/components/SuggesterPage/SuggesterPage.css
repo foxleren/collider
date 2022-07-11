@@ -17,6 +17,7 @@
 
 .SuggesterPage-top-title-container {
     display: flex;
+    justify-content: space-between;
 }
 
 .SuggesterPage-top-title {

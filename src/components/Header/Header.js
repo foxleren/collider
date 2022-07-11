@@ -8,18 +8,19 @@ function Header() {
         document.getElementById('header-links').classList.toggle('open')
     }
 
-    return (
-        <Fade>
-            <header>
-                <Fade direction={"left"}>
-                    <div className="logo"/>
-                </Fade>
-                <Fade cascade={true} direction={"down"}>
+    return (<header>
+            <div className="header-container">
+                <div className="header-first-part">
+                    <Fade triggerOnce={true} direction={"left"}>
+                        <div className="logo"/>
+                    </Fade>
                     <div className="nav-toggle" onClick={(e) => toggleBurger(e)}>
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
+                </div>
+                <Fade cascade={true} triggerOnce={true} direction={"down"} duration={500}>
                     <ul id="header-links">
                         <li>
                             <a href={""}>О нас</a>
@@ -38,10 +39,9 @@ function Header() {
                         </li>
                     </ul>
                 </Fade>
+            </div>
 
-            </header>
-        </Fade>
-    );
+        </header>);
 }
 
 export default Header;
