@@ -14,6 +14,10 @@ header {
     -webkit-transform: translateY(0);
 }
 
+header.hide-nav {
+    transform: translateY(-120%);
+}
+
 .header-container {
     display: flex;
     align-items: center;

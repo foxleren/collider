@@ -6,15 +6,16 @@ import DescriptionColumnPage from "../DescriptionColumnPage/DescriptionColumnPag
 import IntroPage from "../IntroPage/IntroPage";
 import SliderPage from "../SliderPage/SliderPage";
 import ContactsPage from "../ContactsPage/ContactsPage";
+import SuggesterPage from "../SuggesterPage/SuggesterPage";
 
 function MainBody() {
     return (<div className="MainBody">
             <Header/>
             <IntroPage/>
             {/*<SliderPage/>*/}
-            {/*<DescriptionColumnPage/>*/}
-            {/*<SuggesterPage/>*/}
-            {/*<ContactsPage/>*/}
+            <DescriptionColumnPage/>
+            <SuggesterPage/>
+            <ContactsPage/>
     </div>);
 }
 
