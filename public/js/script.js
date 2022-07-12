@@ -48,3 +48,8 @@ $(window).scroll(function() {
     }
     scrollPrev = scrolled;
 });
+
+window.onload = function () {
+    let preloader = document.getElementById('preloader')
+    preloader.style.display = 'none'
+}

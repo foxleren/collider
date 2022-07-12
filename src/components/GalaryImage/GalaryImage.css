@@ -23,7 +23,7 @@
     width: 100%;
     object-fit: cover;
     height: 99vh;
-    max-height: 1000px;
+    max-height: 850px;
 }
 
 .galary-image.fullscreen {
@@ -45,18 +45,31 @@
 }
 
 .galary-image.half-height {
-    max-height: 49vh;
+    height: 49vh;
 }
 
 .galary-image.intro {
-    max-height: 75vh;
+    height: 75vh;
 }
 
 .galary-image.slide {
-    max-height: 92vh;
+    height: 92vh;
 }
+
 .galary-image.contacts {
     height: 70vh;
 }
 
+@media (max-width: 1024px) {
 
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 560px) {
+    .galary-image.slide {
+        zoom: 0.6;
+    }
+}

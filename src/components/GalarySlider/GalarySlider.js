@@ -31,7 +31,7 @@ function GalarySlider(props) {
         return () => clearTimeout(timer)
     }, [currentSlide])
     return (<div className="GalarySlider-container">
-        <Fade cascade={true} direction={"up"}>
+
             <div className="slider-container">
                 {images.map((img, index) => (
                     <ImageSlide key={index} link={img} margin={index === 0 ? -currentSlide * 100 + '%' : null}
@@ -39,7 +39,7 @@ function GalarySlider(props) {
                                 right={right[index]} highlighted={highlighted[index]}/>))}
             </div>
             <SliderToggler currentSlide={currentSlide} slidesQuantity={images.length} changeSlide={changeSlide}/>
-        </Fade>
+
 
     </div>);
 }

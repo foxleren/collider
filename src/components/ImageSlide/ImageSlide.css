@@ -12,13 +12,12 @@
 .slide-text-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    position: relative;
-    top: 490px;
-    left: 70px;
-    /*position: absolute;*/
-    /*bottom: -610px;*/
-    /*margin-left: 100px;*/
+    flex-wrap: nowrap;
+    position: absolute;
+    bottom: 150px;
+    margin-left: 30px;
+    width: 100%;
+    /*top: 500px;*/
 }
 
 .slide-text {
@@ -34,33 +33,41 @@
 
 @media (max-width: 1024px) {
     .slide-text {
-        font-size: 40px;
-    }
-}
-
-@media (max-width: 768px) {
-    .slide-text-container {
-        top: 540px;
-    }
-    .slide-text {
         font-size: 35px;
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 768px) {
+    /*.slide-text-container {*/
+    /*    top: 540px;*/
+    /*}*/
+    .slide-text.highlighted {
+        padding: 0 5px;
+    }
+
     .slide-text {
         font-size: 30px;
     }
 }
 
+@media (max-width: 560px) {
+    .slide-text {
+        font-size: 27px;
+    }
+}
+
 @media (max-width: 480px) {
     .slide-text {
-        font-size: 28px;
+        font-size: 25px;
+    }
+
+    .slide-text-container {
+        bottom: 60px;
     }
 }
 
 @media (max-width: 320px) {
     .slide-text {
-        font-size: 25px;
+        font-size: 23px;
     }
 }

@@ -1,0 +1,50 @@
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.preloader-logo {
+    min-width: 240px;
+    min-height: 40px;
+    background-image: url(../images/collider_logo_black_traced.svg);
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+
+.progress-bar {
+    background: rgba(255, 255, 255, 0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 20px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.progress-value {
+    animation: load 5s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 10px;
+    width: 0;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}

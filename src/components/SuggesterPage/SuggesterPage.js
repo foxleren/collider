@@ -1,7 +1,7 @@
 import './SuggesterPage.css'
 
 import GalaryImage from '../GalaryImage/GalaryImage'
-import {Bounce, Fade} from "react-awesome-reveal";
+import {Fade} from "react-awesome-reveal";
 
 function SuggesterPage() {
     return (<div className="SuggesterPage-container" id="WeSuggest">
@@ -30,10 +30,12 @@ function SuggesterPage() {
             <div className="SuggesterPage-right-container">
                 <GalaryImage link={"/images/suggest_square.svg"} extraClassName="square"/>
                 <div className="SuggesterPage-right-text-container">
-                    <div className="SuggesterPage-right-title">КЕЙТЕРИНГ</div>
-                    <div className="SuggesterPage-right-text">СТОИМОСТЬ ЗАВИСИТ ОТ КОЛИЧЕСТВА ЧЕЛОВЕК И ДЛИТЕЛЬНОСТИ
-                        МЕРОПРИЯТИЯ
-                    </div>
+                    <Fade direction={"right"}>
+                        <div className="SuggesterPage-right-title">КЕЙТЕРИНГ</div>
+                        <div className="SuggesterPage-right-text">СТОИМОСТЬ ЗАВИСИТ ОТ КОЛИЧЕСТВА ЧЕЛОВЕК И ДЛИТЕЛЬНОСТИ
+                            МЕРОПРИЯТИЯ
+                        </div>
+                    </Fade>
                 </div>
             </div>
         </div>
