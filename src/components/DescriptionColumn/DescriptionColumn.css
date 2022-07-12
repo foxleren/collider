@@ -8,8 +8,8 @@
     width: fit-content;
     padding: 0px 10px;
     font-weight: 400;
-    font-size: 115px;
-    line-height: 100px;
+    font-size: 85px;
+    line-height: 70px;
     background-color: #000;
     color: #FFF;
     margin: 10px 0;
@@ -17,4 +17,27 @@
 
 .DescriptionColumn-text.highlighted {
     color: #FF0000;
+}
+
+@media (max-width: 1200px) {
+    .DescriptionColumn-text {
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .DescriptionColumn-text {
+        font-size: 40px;
+        line-height: 60px;
+        margin-left: 35px !important;
+    }
+}
+
+@media (max-width: 560px) {
+    .DescriptionColumn-text {
+        font-size: 30px;
+        line-height: 43px;
+        margin-left: 15px !important;
+    }
 }

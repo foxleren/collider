@@ -4,7 +4,7 @@ import GalaryImage from '../GalaryImage/GalaryImage'
 import {Bounce, Fade} from "react-awesome-reveal";
 
 function SuggesterPage() {
-    return (<div className="SuggesterPage-container">
+    return (<div className="SuggesterPage-container" id="WeSuggest">
         <div className="SuggesterPage-top-container">
             <Fade direction={"left"}>
                 <div className="SuggesterPage-top-text">У НАС ЕСТЬ</div>

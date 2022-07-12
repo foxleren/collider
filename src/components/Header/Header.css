@@ -14,8 +14,8 @@ header {
     -webkit-transform: translateY(0);
 }
 
-header.hide-nav {
-    transform: translateY(-120%);
+header.hidden {
+    transform: translateY(-100%);
 }
 
 .header-container {
@@ -83,6 +83,10 @@ header.hide-nav {
     width: 38px;
     cursor: pointer;
     padding: 8px 8px;
+}
+
+.nav-toggle:hover {
+    cursor: pointer;
 }
 
 .nav-toggle span {

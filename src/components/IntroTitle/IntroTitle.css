@@ -19,8 +19,54 @@
 }
 
 .IntroTitle-text span {
-    margin-left: 20px;
+    /*margin-left: 20px;*/
+    font-size: 80px;
     color: #FF0000;
+    position: absolute;
+    left: 0;
+    /*top: 145px;*/
+    /*animation: change-color 0.5s ease-in;*/
+    /*animation-iteration-count: 5;*/
+    transition: 0.5s ease-in-out;
+}
+
+.IntroTitle-text span.white {
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.IntroTitle-text:nth-child(1) {
+    top: 120px;
+}
+
+@keyframes change-color {
+    0% {
+        opacity: 0;
+        transform: translate3d(500px, -100px, 0) scale(0.5);
+        color: #FF0000;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) scale(2);
+        color: #FFF;
+    }
+}
+
+.IntroTitle-text {
+    background-image: url(../images/intro_title.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 840px;
+    max-height: 255px;
+    width: 100%;
+    height: auto;
+    min-width: 300px;
+    min-height: 570px;
+    position: absolute;
+    right: 0px;
+    bottom: -140px;
+    zoom: 0.8;
 }
 
 .IntroTitle-ellipse {

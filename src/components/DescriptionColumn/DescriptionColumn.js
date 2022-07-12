@@ -4,7 +4,7 @@ import {Fade} from "react-awesome-reveal";
 function DescriptionColumn() {
     return (
        <div className="DescriptionColumn-container">
-           <Fade cascade={true} direction={"right"}>
+           <Fade cascade={true}>
                <div className="DescriptionColumn-text highlighted" style={{marginLeft: "0px"}}>ВЕЧЕРИНКИ</div>
                <div className="DescriptionColumn-text" style={{marginLeft: "70px"}}>КОНЦЕРТЫ</div>
                <div className="DescriptionColumn-text" style={{marginLeft: "140px"}}>СТЕНДАПЫ</div>

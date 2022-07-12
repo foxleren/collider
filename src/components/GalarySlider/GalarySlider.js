@@ -8,6 +8,7 @@ import image1 from '../images/slide_1.svg'
 import image2 from '../images/slide_2.svg'
 import image3 from '../images/slide_3.svg'
 import image4 from '../images/slide_4.svg'
+import {Fade} from "react-awesome-reveal";
 
 const images = [image1, image2, image3, image4]
 const highlighted = ["5 минут", "450m2", "200", "лекторий"]
@@ -30,14 +31,16 @@ function GalarySlider(props) {
         return () => clearTimeout(timer)
     }, [currentSlide])
     return (<div className="GalarySlider-container">
+        <Fade cascade={true} direction={"up"}>
+            <div className="slider-container">
+                {images.map((img, index) => (
+                    <ImageSlide key={index} link={img} margin={index === 0 ? -currentSlide * 100 + '%' : null}
+                                left={left[index]}
+                                right={right[index]} highlighted={highlighted[index]}/>))}
+            </div>
+            <SliderToggler currentSlide={currentSlide} slidesQuantity={images.length} changeSlide={changeSlide}/>
+        </Fade>
 
-        <div className="slider-container">
-            {images.map((img, index) => (
-                <ImageSlide key={index} link={img} margin={index === 0 ? -currentSlide * 100 + '%' : null}
-                            left={left[index]}
-                            right={right[index]} highlighted={highlighted[index]}/>))}
-        </div>
-        <SliderToggler currentSlide={currentSlide} slidesQuantity={images.length} changeSlide={changeSlide}/>
     </div>);
 }
 

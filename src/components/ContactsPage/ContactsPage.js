@@ -4,7 +4,7 @@ import GalaryImage from '../GalaryImage/GalaryImage'
 
 function ContactsPage() {
     return (
-        <div className="ContactsPage-container">
+        <div className="ContactsPage-container" id="Contacts">
             <div className="ContactsPage-title">НАШИ <span>КОНТАКТЫ</span></div>
             <div className="ContactsPage-text-container">
                 <div className="ContactsPage-text">COLLIDER</div>
@@ -16,7 +16,7 @@ function ContactsPage() {
                 <div className="ContactsPage-text">event@collider.ru</div>
             </div>
 
-            <GalaryImage link={"/images/contacts.svg"} extraClassName=""/>
+            <GalaryImage link={"/images/contacts.svg"} extraClassName="contacts"/>
         </div>
     );
 }

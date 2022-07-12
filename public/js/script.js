@@ -19,55 +19,32 @@ $('a[href^="#"]').on('click', function (event) {
     }
 });
 
-$('.nav-toggle').on('click', function () {
-    $(this).toggleClass('active');
-    $('#header-links').toggleClass('open');
-});
+// $('header').on('click', function () {
+//     console.log('burger')
+//     $(this).toggleClass('active');
+//     $('#header-links').toggleClass('open');
+// });
+//
+// $('.nav-toggle').on('click', function(){
+//     $('.nav-toggle').toggleClass('active');
+// });
+//
+// $('#header-links a').on('click', function () {
+//     $('.nav-toggle').removeClass('active');
+//     $('#header-links').removeClass('open');
+// });
 
-$('#header-links a').on('click', function () {
-    $('.nav-toggle').removeClass('active');
-    $('#header-links').removeClass('open');
-});
+let scrollPrev = 0;
 
-// Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
 
-$(window).scroll(function (event) {
-    didScroll = true;
-});
-
-setInterval(function () {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-
-    // Make sure they scroll more than delta
-    if (Math.abs(lastScrollTop - st) <= delta)
-        return;
-
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight) {
-        // Scroll Down
-        console.log("down")
-        $('header').removeClass('show-nav').addClass('hide-nav');
-        $('.nav-toggle').removeClass('open');
-        $('.menu-left').removeClass('collapse');
+    if ( scrolled > 100 && scrolled > scrollPrev ) {
+        $('header').addClass('hidden');
+        $('.nav-toggle').removeClass('active');
+        $('#header-links').removeClass('open');
     } else {
-        // Scroll Up
-        if (st + $(window).height() < $(document).height()) {
-            console.log("up")
-            $('header').removeClass('hide-nav').addClass('show-nav');
-        }
+        $('header').removeClass('hidden');
     }
-
-    lastScrollTop = st;
-}
+    scrollPrev = scrolled;
+});
