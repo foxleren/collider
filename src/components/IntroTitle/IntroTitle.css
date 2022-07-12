@@ -1,7 +1,7 @@
 .IntroTitle-container {
     display: flex;
-    /*position: absolute;*/
-    /*bottom: -70px;*/
+    position: absolute;
+    bottom: -70px;
 }
 
 /*.IntroTitle-container div {*/
@@ -10,13 +10,13 @@
 /*    line-height: 127px;*/
 /*}*/
 
-/*.IntroTitle-text {*/
-/*    text-align: left;*/
-/*    color: #fff;*/
-/*    font-weight: 400;*/
-/*    font-size: 60px;*/
-/*    line-height: 80px;*/
-/*}*/
+.IntroTitle-text {
+    text-align: left;
+    color: #fff;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 80px;
+}
 
 .IntroTitle-title {
     /*margin-left: 20px;*/
@@ -27,7 +27,7 @@
     /*top: 145px;*/
     /*animation: change-color 0.5s ease-in;*/
     /*animation-iteration-count: 5;*/
-    transition: 0.5s ease-in-out;
+    /*transition: 0.5s ease-in-out;*/
 }
 
 .IntroTitle-title.white {
@@ -53,21 +53,21 @@
     }
 }
 
-.IntroTitle-text {
-    background-image: url(../images/intro_title.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    /*max-width: 840px;*/
-    /*max-height: 255px;*/
-    width: 100%;
-    height: auto;
-    min-width: 300px;
-    min-height: 460px;
-    position: absolute;
-    left: 0;
-    bottom: -140px;
-    zoom: 0.8;
-}
+/*.IntroTitle-text {*/
+/*    background-image: url(../images/intro_title.svg);*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    !*max-width: 840px;*!*/
+/*    !*max-height: 255px;*!*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    min-width: 300px;*/
+/*    min-height: 460px;*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    bottom: -140px;*/
+/*    zoom: 0.8;*/
+/*}*/
 
 .IntroTitle-ellipse {
     background-image: url(../images/intro_ellipse.svg);

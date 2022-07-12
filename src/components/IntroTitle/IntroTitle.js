@@ -4,21 +4,21 @@ import {keyframes} from "@emotion/react";
 
 const customAnimation = keyframes`
   0% {
-    opacity: 0.5;
-    transform: translate3d(15%, -100px, 0) scale(0.5);
+    opacity: 0;
+    transform: translate3d(5%, -100px, 0) scale(0.5);
   }
   25% {
     opacity: 0.25;
-    transform: translate3d(35%, -50px, 0) scale(0.5);
+    transform: translate3d(25%, -75px, 0) scale(0.5);
   }
   50% {
     opacity: 0.5;
-    transform: translate3d(70%, -50px, 0) scale(0.75);
+    transform: translate3d(40%, 0px, 0) scale(0.75);
   }
 
   75% {
     opacity: 0.75;
-    transform: translate3d(70%, -50px, 0) scale(0.85);
+    transform: translate3d(45%, 0, 0) scale(0.85);
   }
 
   100% {
@@ -42,18 +42,18 @@ const changeColor = keyframes`
 
 function IntroTitle() {
     return (<div className="IntroTitle-container">
-        <div className="IntroTitle-text"/>
-        {/*ПРИВЕТ, МЫ - COLLIDER НА САВЕЛОВСКОЙ, И МЫ БОЛЬШЕ, ЧЕМ*/}
-
-
+        <div className="IntroTitle-text">
+            ПРИВЕТ, МЫ - COLLIDER НА САВЕЛОВСКОЙ, И МЫ БОЛЬШЕ, ЧЕМ
+        <Reveal keyframes={customAnimation} cascade={true} duration={500} damping={0.3}>
+            <span className="IntroTitle-title">КОВОРКИНГ</span>
+            <span className="IntroTitle-title">КОВОРКИНГ</span>
+            <span className="IntroTitle-title">КОВОРКИНГ</span>
+            <span className="IntroTitle-title">КОВОРКИНГ</span>
+            <span className="IntroTitle-title">КОВОРКИНГ</span>
+            <span className="IntroTitle-title">КОВОРКИНГ</span>
+            <span className="IntroTitle-title">КОВОРКИНГ</span>
+        </Reveal></div>
         <div className="IntroTitle-ellipse" alt={""}/>
-        {/*<Reveal keyframes={customAnimation} cascade={true} duration={700} fraction={0.5}>*/}
-        {/*    <span className="IntroTitle-title">КОВОРКИНГ</span>*/}
-        {/*    <span className="IntroTitle-title">КОВОРКИНГ</span>*/}
-        {/*    <span className="IntroTitle-title">КОВОРКИНГ</span>*/}
-        {/*    <span className="IntroTitle-title">КОВОРКИНГ</span>*/}
-        {/*    <span className="IntroTitle-title">КОВОРКИНГ</span>*/}
-        {/*</Reveal>*/}
     </div>);
 }
 
