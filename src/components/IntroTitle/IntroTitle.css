@@ -1,7 +1,7 @@
 .IntroTitle-container {
     display: flex;
-    position: absolute;
-    bottom: -70px;
+    /*position: absolute;*/
+    /*bottom: -70px;*/
 }
 
 /*.IntroTitle-container div {*/
@@ -10,15 +10,15 @@
 /*    line-height: 127px;*/
 /*}*/
 
-.IntroTitle-text {
-    text-align: left;
-    color: #fff;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 80px;
-}
+/*.IntroTitle-text {*/
+/*    text-align: left;*/
+/*    color: #fff;*/
+/*    font-weight: 400;*/
+/*    font-size: 60px;*/
+/*    line-height: 80px;*/
+/*}*/
 
-.IntroTitle-text span {
+.IntroTitle-title {
     /*margin-left: 20px;*/
     font-size: 80px;
     color: #FF0000;
@@ -30,14 +30,14 @@
     transition: 0.5s ease-in-out;
 }
 
-.IntroTitle-text span.white {
+.IntroTitle-title.white {
     color: white;
     transition: 0.3s ease-in-out;
 }
 
-.IntroTitle-text:nth-child(1) {
-    top: 120px;
-}
+/*.IntroTitle-text:nth-child(1) {*/
+/*    top: 120px;*/
+/*}*/
 
 @keyframes change-color {
     0% {
@@ -57,14 +57,14 @@
     background-image: url(../images/intro_title.svg);
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 840px;
-    max-height: 255px;
+    /*max-width: 840px;*/
+    /*max-height: 255px;*/
     width: 100%;
     height: auto;
     min-width: 300px;
-    min-height: 570px;
+    min-height: 460px;
     position: absolute;
-    right: 0px;
+    left: 0;
     bottom: -140px;
     zoom: 0.8;
 }

@@ -42,18 +42,18 @@ const changeColor = keyframes`
 
 function IntroTitle() {
     return (<div className="IntroTitle-container">
-        <div className="IntroTitle-text">
-            {/*ПРИВЕТ, МЫ - COLLIDER НА САВЕЛОВСКОЙ, И МЫ БОЛЬШЕ, ЧЕМ*/}
+        <div className="IntroTitle-text"/>
+        {/*ПРИВЕТ, МЫ - COLLIDER НА САВЕЛОВСКОЙ, И МЫ БОЛЬШЕ, ЧЕМ*/}
 
-        </div><Reveal keyframes={customAnimation} cascade={true} duration={700} fraction={0.5}>
-        <span>КОВОРКИНГ</span>
-        <span>КОВОРКИНГ</span>
-        <span>КОВОРКИНГ</span>
-        <span>КОВОРКИНГ</span>
-        <span>КОВОРКИНГ</span>
-        <span>КОВОРКИНГ</span>
-    </Reveal>
+
         <div className="IntroTitle-ellipse" alt={""}/>
+        {/*<Reveal keyframes={customAnimation} cascade={true} duration={700} fraction={0.5}>*/}
+        {/*    <span className="IntroTitle-title">КОВОРКИНГ</span>*/}
+        {/*    <span className="IntroTitle-title">КОВОРКИНГ</span>*/}
+        {/*    <span className="IntroTitle-title">КОВОРКИНГ</span>*/}
+        {/*    <span className="IntroTitle-title">КОВОРКИНГ</span>*/}
+        {/*    <span className="IntroTitle-title">КОВОРКИНГ</span>*/}
+        {/*</Reveal>*/}
     </div>);
 }
 
